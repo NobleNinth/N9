@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Roster & Forms | 9th Manhattan Masonic District</title>
+  <meta name="description" content="Members-only portal for the 9th Manhattan Masonic District. Access forms, rosters, and administrative files.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="district_logo_header.png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="district_logo_header.png" alt="9th Manhattan District Logo" class="logo-img">
+        <div class="logo-text">
+          Ninth Manhattan District
+          <span>Grand Lodge of New York</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        &#9776;
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Freemasonry</a>
+        <a href="calendar.html" class="nav-link">Calendar</a>
+        <a href="news.html" class="nav-link">Masonic News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portal Section -->
+  <section class="section" style="background-color: #f7fafc; min-height: 70vh; display: flex; align-items: center;">
+    <div class="container" style="width: 100%;">
+      
+      <!-- Password Prompt Card -->
+      <div id="password-prompt" style="max-width: 450px; margin: 0 auto; background: white; border-radius: var(--border-radius-md); border: 1px solid #e2e8f0; padding: 40px; box-shadow: var(--shadow-medium); text-align: center;">
+        <div style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(212, 175, 55, 0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px auto;">
+          <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+        </div>
+        <h2 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--color-primary); margin-bottom: 12px;">Protected Portal</h2>
+        <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 30px;">
+          This area is restricted to members of the 9th Manhattan Masonic District. Please enter your district access password to proceed.
+        </p>
+        
+        <form id="portal-login-form">
+          <div class="form-group" style="margin-bottom: 20px;">
+            <input type="password" id="portal-password" class="form-control text-center" placeholder="Enter Password" required style="letter-spacing: 0.2em;">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Access Portal</button>
+        </form>
+        <p style="font-size: 0.8rem; color: #a0aec0; margin-top: 15px; font-style: italic;">Hint: Use <strong>9thdistrict</strong> for this mockup</p>
+      </div>
+
+      <!-- Protected Content (Initially Hidden) -->
+      <div id="portal-content" style="display: none; max-width: 900px; margin: 0 auto; background: white; border-radius: var(--border-radius-lg); border: 1px solid #e2e8f0; padding: 50px; box-shadow: var(--shadow-medium);">
+        <header style="border-bottom: 2px solid var(--color-accent); padding-bottom: 24px; margin-bottom: 35px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-accent); font-weight: 600;">Member Resource Center</span>
+            <h1 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-primary); margin-top: 5px;">Roster & District Forms</h1>
+          </div>
+          <button id="portal-logout" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.8rem; border-color: #cbd5e0; color: var(--color-text-muted);">Lock Portal</button>
+        </header>
+
+        <div class="roster-grid">
+          <!-- Left: Forms Downloads -->
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.3rem; color: var(--color-primary); margin-bottom: 20px;">Administrative Forms</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+              
+              <!-- Form item -->
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid #edf2f7; border-radius: var(--border-radius-md); background-color: #f7fafc;">
+                <div>
+                  <strong style="display: block; font-size: 0.9rem; color: var(--color-primary);">Petition for Initiation</strong>
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">PDF Form | 142 KB</span>
+                </div>
+                <a href="#" style="color: var(--color-accent);"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></a>
+              </div>
+
+              <!-- Form item -->
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid #edf2f7; border-radius: var(--border-radius-md); background-color: #f7fafc;">
+                <div>
+                  <strong style="display: block; font-size: 0.9rem; color: var(--color-primary);">Affiliation Petition</strong>
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">PDF Form | 115 KB</span>
+                </div>
+                <a href="#" style="color: var(--color-accent);"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></a>
+              </div>
+
+              <!-- Form item -->
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid #edf2f7; border-radius: var(--border-radius-md); background-color: #f7fafc;">
+                <div>
+                  <strong style="display: block; font-size: 0.9rem; color: var(--color-primary);">District Bylaws (Amended)</strong>
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">PDF document | 1.2 MB</span>
+                </div>
+                <a href="#" style="color: var(--color-accent);"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: District Directory -->
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.3rem; color: var(--color-primary); margin-bottom: 20px;">Lodge Officer Roster</h3>
+            
+            <div style="border: 1px solid #e2e8f0; border-radius: var(--border-radius-md); overflow: hidden;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
+                <thead>
+                  <tr style="background-color: var(--color-primary); color: var(--color-text-light);">
+                    <th style="padding: 12px 15px; font-family: var(--font-serif); font-weight: 500;">Lodge</th>
+                    <th style="padding: 12px 15px; font-family: var(--font-serif); font-weight: 500;">Worshipful Master</th>
+                    <th style="padding: 12px 15px; font-family: var(--font-serif); font-weight: 500;">Secretary</th>
+                  </tr>
+                </thead>
+                <tbody style="color: #4a5568;">
+                  <tr style="border-bottom: 1px solid #edf2f7;">
+                    <td style="padding: 12px 15px; font-weight: 600;">Harmony 199</td>
+                    <td style="padding: 12px 15px;">W∴ John Miller</td>
+                    <td style="padding: 12px 15px;">W∴ George Wagner</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #edf2f7; background-color: #f7fafc;">
+                    <td style="padding: 12px 15px; font-weight: 600;">KS-Beethoven 232</td>
+                    <td style="padding: 12px 15px;">W∴ Franz Schubert</td>
+                    <td style="padding: 12px 15px;">W∴ Johann Bach</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #edf2f7;">
+                    <td style="padding: 12px 15px; font-weight: 600;">Trinity 12</td>
+                    <td style="padding: 12px 15px;">W∴ Heinrich Heine</td>
+                    <td style="padding: 12px 15px;">W∴ Thomas Mann</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #edf2f7; background-color: #f7fafc;">
+                    <td style="padding: 12px 15px; font-weight: 600;">Knickerbocker 182</td>
+                    <td style="padding: 12px 15px;">W∴ Arthur Smith</td>
+                    <td style="padding: 12px 15px;">W∴ Charles Davis</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #edf2f7;">
+                    <td style="padding: 12px 15px; font-weight: 600;">Copernicus 545</td>
+                    <td style="padding: 12px 15px;">W∴ Albert Einstein</td>
+                    <td style="padding: 12px 15px;">W∴ Max Planck</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 15px; font-style: italic;">
+              For the complete roster or to submit directory changes, please contact the District Secretary.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4>9th Manhattan District</h4>
+          <p>
+            Operating under the Grand Lodge of Free and Accepted Masons of the State of New York. Preserving masonic light and historic community bonds.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+            </a>
+            <a href="feed/" class="social-btn" aria-label="RSS Feed">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 20.001c-4.418 0-8-3.582-8-8 0-1.85 1.09-3.58 2.82-4.82l-1.41-1.42c-2.31 1.69-3.41 4.19-3.41 6.24 0 5.52 4.48 10 10 10 2.05 0 4.55-1.1 6.24-3.41l-1.42-1.41c-1.24 1.73-2.97 2.82-4.82 2.82zm8-8c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Freemasonry</a></li>
+            <li><a href="news.html">Masonic News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Members & Portal</h4>
+          <ul class="footer-links-list">
+            <li><a href="roster.html">Roster & Forms</a></li>
+            <li><a href="wp-admin/">Admin Login</a></li>
+            <li><a href="http://NYMasons.Org" target="_blank">GL of New York</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 9th Manhattan Masonic District. All rights reserved.</p>
+        <p>Designed & Developed by <a href="http://www.dragonflypcs.com" target="_blank">Dragonfly PCS</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portal Interactivity JavaScript -->
+  <script>
+    // Mobile navigation toggle
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    // Portal Login handling
+    const loginForm = document.getElementById('portal-login-form');
+    const passwordInput = document.getElementById('portal-password');
+    const promptCard = document.getElementById('password-prompt');
+    const portalContent = document.getElementById('portal-content');
+    const logoutBtn = document.getElementById('portal-logout');
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const pwd = passwordInput.value.trim();
+      
+      if (pwd === '9thdistrict') {
+        promptCard.style.display = 'none';
+        portalContent.style.display = 'block';
+      } else {
+        alert('Incorrect password. Please try again.');
+        passwordInput.value = '';
+      }
+    });
+
+    logoutBtn.addEventListener('click', () => {
+      portalContent.style.display = 'none';
+      promptCard.style.display = 'block';
+      passwordInput.value = '';
+    });
+  </script>
+</body>
+</html>

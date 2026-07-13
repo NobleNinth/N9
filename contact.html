@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | 9th Manhattan Masonic District</title>
+  <meta name="description" content="Get in touch with the 9th Manhattan Masonic District. Find our executive office details, phone, and send us a direct message.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="district_logo_header.png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="district_logo_header.png" alt="9th Manhattan District Logo" class="logo-img">
+        <div class="logo-text">
+          Ninth Manhattan District
+          <span>Grand Lodge of New York</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        &#9776;
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Freemasonry</a>
+        <a href="calendar.html" class="nav-link">Calendar</a>
+        <a href="news.html" class="nav-link">Masonic News</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="section" style="background-color: #f7fafc;">
+    <div class="container">
+      <div class="contact-wrapper">
+        
+        <!-- Left: Info Panel -->
+        <div class="contact-info-panel">
+          <div>
+            <h3>District Offices</h3>
+            <p>For official inquiries, lodge communications, and publishing submissions.</p>
+            
+            <div class="contact-details-list">
+              <!-- Address -->
+              <div class="contact-detail-item">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <div>
+                  <h4 style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--color-accent); margin-bottom: 4px;">Executive Offices</h4>
+                  <p>149-39 11th Ave.<br>Whitestone, NY 11357</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-detail-item">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <div>
+                  <h4 style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--color-accent); margin-bottom: 4px;">Phone Number</h4>
+                  <p>(718) 360-1538</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-detail-item">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <div>
+                  <h4 style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--color-accent); margin-bottom: 4px;">Email Address</h4>
+                  <p>info@noble9th.org</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.85rem; color: #a0aec0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+            Meetings and visits are subject to individual lodge calendars. Please contact the lodge secretary directly for lodge-specific events.
+          </div>
+        </div>
+
+        <!-- Right: Form Panel -->
+        <div class="contact-form-panel">
+          <h3>Send a Message</h3>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="Inquiry about membership / visiting" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <!-- Interactive Math Captcha -->
+            <label class="form-label">Spam Protection</label>
+            <div class="captcha-wrapper">
+              <span class="captcha-label" id="captcha-question">5 + 4 =</span>
+              <input type="number" id="captcha-answer" class="form-control captcha-input" placeholder="Result" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+          </form>
+
+          <div id="form-success" style="display: none; margin-top: 20px; padding: 15px; background-color: #f0fff4; border: 1px solid #c6f6d5; border-radius: var(--border-radius-sm); color: #22543d; font-weight: 500;">
+            Thank you! Your message has been sent successfully. We will get back to you shortly.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4>9th Manhattan District</h4>
+          <p>
+            Operating under the Grand Lodge of Free and Accepted Masons of the State of New York. Preserving masonic light and historic community bonds.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+            </a>
+            <a href="feed/" class="social-btn" aria-label="RSS Feed">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 20.001c-4.418 0-8-3.582-8-8 0-1.85 1.09-3.58 2.82-4.82l-1.41-1.42c-2.31 1.69-3.41 4.19-3.41 6.24 0 5.52 4.48 10 10 10 2.05 0 4.55-1.1 6.24-3.41l-1.42-1.41c-1.24 1.73-2.97 2.82-4.82 2.82zm8-8c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Freemasonry</a></li>
+            <li><a href="news.html">Masonic News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Members & Portal</h4>
+          <ul class="footer-links-list">
+            <li><a href="roster.html">Roster & Forms</a></li>
+            <li><a href="wp-admin/">Admin Login</a></li>
+            <li><a href="http://NYMasons.Org" target="_blank">GL of New York</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 9th Manhattan Masonic District. All rights reserved.</p>
+        <p>Designed & Developed by <a href="http://www.dragonflypcs.com" target="_blank">Dragonfly PCS</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactivity JavaScript -->
+  <script>
+    // Mobile navigation toggle
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    // Captcha generation and form submission
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    const correctAnswer = num1 + num2;
+    
+    const captchaLabel = document.getElementById('captcha-question');
+    captchaLabel.textContent = `${num1} + ${num2} =`;
+
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const userAnswer = parseInt(document.getElementById('captcha-answer').value, 10);
+      
+      if (userAnswer !== correctAnswer) {
+        alert('Spam protection answer is incorrect. Please try again.');
+        return;
+      }
+      
+      // Captcha is correct, show success message
+      contactForm.style.display = 'none';
+      formSuccess.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

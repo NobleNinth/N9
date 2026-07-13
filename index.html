@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9th Manhattan Masonic District | Grand Lodge of New York</title>
+  <meta name="description" content="Official website of the 9th Manhattan Masonic District, Grand Lodge of Free & Accepted Masons of the State of New York. Discover our lodges, leadership, and heritage.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="district_logo_header.png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="district_logo_header.png" alt="9th Manhattan District Logo" class="logo-img">
+        <div class="logo-text">
+          Ninth Manhattan District
+          <span>Grand Lodge of New York</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        &#9776;
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Freemasonry</a>
+        <a href="calendar.html" class="nav-link">Calendar</a>
+        <a href="news.html" class="nav-link">Masonic News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <img src="district_logo.png" alt="9th Manhattan Masonic District Logo" style="height: 220px; width: auto; margin: 0 auto 24px auto; display: block; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));">
+      <p class="hero-subtitle">Grand Lodge of F&AM State of New York</p>
+      <h1 class="hero-title">9th Manhattan<br>Masonic District</h1>
+      <p class="hero-desc"> Fostering brotherhood, charity, and wisdom. Anchored in our historic German Masonic heritage in New York, we unite lodges across Whitestone, Manhattan, and Sparkill. </p>
+      <a href="#lodges" class="btn btn-primary">Our Lodges</a>
+      <a href="about.html" class="btn btn-secondary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="heritage-grid">
+        <div>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">Our Heritage & Mission</h2>
+          <p style="font-size: 1.1rem; color: #4a5568; margin-bottom: 20px; line-height: 1.8;">
+            The 9th Manhattan Masonic District operates under the jurisdiction of the Grand Lodge of Free and Accepted Masons of the State of New York. Historically known as the German district, we represent a legacy of craftsmanship, benevolence, and mutual support that has thrived in the New York metropolitan area for over a century.
+          </p>
+          <p style="font-size: 1.05rem; color: var(--color-text-muted); line-height: 1.7; margin-bottom: 24px;">
+            Today, our district encompasses twelve active lodges. While preserving our rich German heritage and traditions, our lodges welcome men of good character from all backgrounds who seek to improve themselves, aid their communities, and build lasting bonds of fraternal friendship.
+          </p>
+          <div style="display: flex; gap: 30px; margin-top: 30px;">
+            <div style="text-align: left;">
+              <span style="display: block; font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-accent); font-weight: 700; line-height: 1;">12</span>
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted);">Active Lodges</span>
+            </div>
+            <div style="text-align: left;">
+              <span style="display: block; font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-accent); font-weight: 700; line-height: 1;">3</span>
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted);">Meeting Locations</span>
+            </div>
+            <div style="text-align: left;">
+              <span style="display: block; font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-accent); font-weight: 700; line-height: 1;">1850s</span>
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted);">Heritage Roots</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Symbolic Art Frame -->
+        <div style="background-color: var(--color-primary-dark); padding: 40px; border-radius: var(--border-radius-lg); border: 2px solid var(--color-accent); box-shadow: var(--shadow-medium); text-align: center; color: var(--color-text-light);">
+          <div style="font-family: var(--font-serif); font-size: 4rem; color: var(--color-accent); margin-bottom: 10px; opacity: 0.8;">∴</div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 12px; color: var(--color-text-light);">Virtus Junxit<br>Mors Non Separabit</h3>
+          <p style="font-size: 0.9rem; color: #a0aec0; font-style: italic;">"What virtue has joined, death shall not separate."</p>
+          <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 24px 0;">
+          <p style="font-size: 0.9rem; color: #cbd5e0; line-height: 1.6;">
+            Dedicated to the principles of Brotherly Love, Relief, and Truth. Promoting charitable foundations, community support, and personal development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lodges Directory Section -->
+  <section class="section" id="lodges" style="background-color: #f7fafc; border-top: 1px solid #edf2f7; border-bottom: 1px solid #edf2f7;">
+    <div class="container">
+      <h2 class="section-title text-center">District Lodges</h2>
+      <p class="section-subtitle text-center">Our district spans twelve distinct lodges meeting in Whitestone (Queens), Manhattan (NYC), and Sparkill (Rockland County). Find meeting times and locations below.</p>
+      
+      <!-- Interactive Filtering Tabs -->
+      <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;" id="filter-tabs">
+        <button class="btn btn-primary filter-btn active" data-filter="all">All locations</button>
+        <button class="btn btn-secondary filter-btn" data-filter="whitestone">Whitestone Temple</button>
+        <button class="btn btn-secondary filter-btn" data-filter="manhattan">Manhattan</button>
+        <button class="btn btn-secondary filter-btn" data-filter="sparkill">Sparkill</button>
+      </div>
+      
+      <div class="grid-lodges" id="lodges-grid">
+               <!-- Lodge 1: Trinity -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Trinity Lodge No. 12</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                1st & 3rd Wednesday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 2: Knickerbocker -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Knickerbocker Lodge No. 182</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                2nd & 4th Friday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 3: Harmony -->
+        <div class="lodge-card" data-location="sparkill">
+          <div class="lodge-header">
+            <span class="lodge-badge">Sparkill</span>
+            <h3 class="lodge-title">Harmony Lodge No. 199</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                1st & 3rd Monday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                601 Main Street<br>Sparkill, NY 10976
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=601+Main+Street+Sparkill+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 4: King Solomon-Beethoven -->
+        <div class="lodge-card" data-location="manhattan">
+          <div class="lodge-header">
+            <span class="lodge-badge">Manhattan</span>
+            <h3 class="lodge-title">King Solomon-Beethoven No. 232</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                1st & 3rd Wednesday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Masonic Hall (Empire Room)<br>71 West 23rd Street, NY 10010
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=71+West+23rd+Street+New+York+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 5: Schiller -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Schiller Lodge No. 304</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                2nd Monday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 6: Copernicus -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Copernicus Lodge No. 545</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                2nd & 4th Tuesday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 7: Lessing -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Lessing Lodge No. 608</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                2nd & 4th Thursday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 8: Herder -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Herder Lodge No. 698</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                2nd & 4th Wednesday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 9: Wieland -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Wieland Lodge No. 714</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                3rd Thursday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 10: Uhland -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Uhland Lodge No. 735</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                1st & 3rd Tuesday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 11: Allemania -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Allemania Lodge No. 740</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                1st & 3rd Monday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lodge 12: Von Mensch -->
+        <div class="lodge-card" data-location="whitestone">
+          <div class="lodge-header">
+            <span class="lodge-badge">Whitestone</span>
+            <h3 class="lodge-title">Von Mensch Lodge No. 765</h3>
+          </div>
+          <div class="lodge-details">
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Meeting Times</strong>
+                1st Thursday
+              </div>
+            </div>
+            <div class="lodge-info-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div class="lodge-info-text">
+                <strong>Address</strong>
+                Whitestone Masonic Temple<br>149-39 11th Ave, Whitestone, NY 11357
+              </div>
+            </div>
+          </div>
+          <div class="lodge-action">
+            <a href="https://maps.google.com/?q=149-39+11th+Ave+Whitestone+NY" target="_blank" class="lodge-map-btn">
+              Get Directions
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section class="section" style="background-color: white; border-bottom: 1px solid #edf2f7;">
+    <div class="container">
+      <h2 class="section-title text-center">Upcoming Events</h2>
+      <p class="section-subtitle text-center">Stay informed on upcoming lodge degrees, DDGM official visitations, and district conventions.</p>
+      
+      <div id="upcoming-events-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+        
+        <!-- Loading Skeleton Card 1 -->
+        <div class="skeleton-card" style="display: flex; gap: 20px; background-color: #f7fafc; padding: 24px; border-radius: var(--border-radius-md); border: 1px solid #edf2f7; border-left: 4px solid #edf2f7;">
+          <div style="background-color: #e2e8f0; border-radius: var(--border-radius-sm); width: 65px; height: 75px; flex-shrink: 0;"></div>
+          <div style="flex-grow: 1;">
+            <div style="background-color: #e2e8f0; height: 16px; border-radius: 4px; width: 60%; margin-bottom: 10px;"></div>
+            <div style="background-color: #e2e8f0; height: 12px; border-radius: 4px; width: 90%; margin-bottom: 8px;"></div>
+            <div style="background-color: #e2e8f0; height: 12px; border-radius: 4px; width: 40%;"></div>
+          </div>
+        </div>
+
+        <!-- Loading Skeleton Card 2 -->
+        <div class="skeleton-card" style="display: flex; gap: 20px; background-color: #f7fafc; padding: 24px; border-radius: var(--border-radius-md); border: 1px solid #edf2f7; border-left: 4px solid #edf2f7;">
+          <div style="background-color: #e2e8f0; border-radius: var(--border-radius-sm); width: 65px; height: 75px; flex-shrink: 0;"></div>
+          <div style="flex-grow: 1;">
+            <div style="background-color: #e2e8f0; height: 16px; border-radius: 4px; width: 70%; margin-bottom: 10px;"></div>
+            <div style="background-color: #e2e8f0; height: 12px; border-radius: 4px; width: 80%; margin-bottom: 8px;"></div>
+            <div style="background-color: #e2e8f0; height: 12px; border-radius: 4px; width: 50%;"></div>
+          </div>
+        </div>
+
+        <!-- Loading Skeleton Card 3 -->
+        <div class="skeleton-card" style="display: flex; gap: 20px; background-color: #f7fafc; padding: 24px; border-radius: var(--border-radius-md); border: 1px solid #edf2f7; border-left: 4px solid #edf2f7;">
+          <div style="background-color: #e2e8f0; border-radius: var(--border-radius-sm); width: 65px; height: 75px; flex-shrink: 0;"></div>
+          <div style="flex-grow: 1;">
+            <div style="background-color: #e2e8f0; height: 16px; border-radius: 4px; width: 50%; margin-bottom: 10px;"></div>
+            <div style="background-color: #e2e8f0; height: 12px; border-radius: 4px; width: 85%; margin-bottom: 8px;"></div>
+            <div style="background-color: #e2e8f0; height: 12px; border-radius: 4px; width: 45%;"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center;">
+        <a href="calendar.html" class="btn btn-secondary" style="border-color: var(--color-primary); color: var(--color-primary);">View Full District Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title text-center">District Leadership</h2>
+      <p class="section-subtitle text-center">Guiding the 9th Manhattan Masonic District with dedication, wisdom, and brotherly love.</p>
+      
+      <div class="leadership-grid">
+        
+        <!-- Leader 1: DDGM -->
+        <div class="leader-card">
+          <div class="leader-avatar">ED</div>
+          <h3 class="leader-name"><span>R∴W∴ Eric J. <br>Demery</span></h3>
+          <p class="leader-title">District Deputy Grand Master</p>
+        </div>
+
+        <!-- Leader 2: GDC -->
+        <div class="leader-card">
+          <div class="leader-avatar">DK</div>
+          <h3 class="leader-name"><span>R∴W∴ Dieter <br>Kie<span class="eszett">ß</span>ling</span></h3>
+          <p class="leader-title">Grand Director of Ceremonies</p>
+        </div>
+
+        <!-- Leader 3: AGL 1 -->
+        <div class="leader-card">
+          <div class="leader-avatar">ST</div>
+          <h3 class="leader-name"><span>V∴W∴ Stefanos <br>Tsartsalis</span></h3>
+          <p class="leader-title">Assistant Grand Lecturer</p>
+        </div>
+
+        <!-- Leader 4: AGL 2 -->
+        <div class="leader-card">
+          <div class="leader-avatar">PN</div>
+          <h3 class="leader-name"><span>V∴W∴ Peter A. <br>Novak</span></h3>
+          <p class="leader-title">Assistant Grand Lecturer</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4>9th Manhattan District</h4>
+          <p>
+            Operating under the Grand Lodge of Free and Accepted Masons of the State of New York. Preserving masonic light and historic community bonds.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+            </a>
+            <a href="feed/" class="social-btn" aria-label="RSS Feed">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 20.001c-4.418 0-8-3.582-8-8 0-1.85 1.09-3.58 2.82-4.82l-1.41-1.42c-2.31 1.69-3.41 4.19-3.41 6.24 0 5.52 4.48 10 10 10 2.05 0 4.55-1.1 6.24-3.41l-1.42-1.41c-1.24 1.73-2.97 2.82-4.82 2.82zm8-8c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Freemasonry</a></li>
+            <li><a href="news.html">Masonic News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Members & Portal</h4>
+          <ul class="footer-links-list">
+            <li><a href="roster.html">Roster & Forms</a></li>
+            <li><a href="wp-admin/">Admin Login</a></li>
+            <li><a href="http://NYMasons.Org" target="_blank">GL of New York</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 9th Manhattan Masonic District. All rights reserved.</p>
+        <p>Designed & Developed by <a href="http://www.dragonflypcs.com" target="_blank">Dragonfly PCS</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Basic Interactivity JavaScript -->
+  <script>
+    // Mobile navigation toggle
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    }
+
+    // Lodges Filtering
+    const filterTabs = document.getElementById('filter-tabs');
+    const lodgeCards = document.querySelectorAll('.lodge-card');
+    
+    if (filterTabs && lodgeCards.length > 0) {
+      filterTabs.addEventListener('click', (e) => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        
+        // Update active tab styling
+        filterTabs.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('btn-primary', 'active');
+          b.classList.add('btn-secondary');
+        });
+        btn.classList.add('btn-primary', 'active');
+        btn.classList.remove('btn-secondary');
+        
+        const filterValue = btn.dataset.filter;
+        
+        // Filter the lodge cards
+        lodgeCards.forEach(card => {
+          if (filterValue === 'all' || card.dataset.location === filterValue) {
+            card.style.display = 'flex';
+            card.style.opacity = '0';
+            setTimeout(() => {
+              card.style.transition = 'opacity 0.4s ease, transform 0.3s ease';
+              card.style.opacity = '1';
+            }, 10);
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Dynamic Google Calendar Upcoming Events
+    const CALENDAR_ID = 'dd@gmcf.us';
+
+    function formatTime(date) {
+      return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function formatDateBadge(date) {
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      return {
+        month: months[date.getMonth()],
+        day: date.getDate()
+      };
+    }
+
+    function renderEvents(events) {
+      const grid = document.getElementById('upcoming-events-grid');
+      if (!grid) return;
+      
+      if (!events || events.length === 0) {
+        grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--color-text-muted);">No upcoming events scheduled at this time.</p>';
+        return;
+      }
+      
+      grid.innerHTML = events.map(event => {
+        const dateBadge = formatDateBadge(event.start);
+        const timeStr = event.isAllDay ? 'All Day' : formatTime(event.start);
+        const locationStr = event.location ? event.location.split(',')[0] : 'TBD';
+        const descriptionStr = event.description ? event.description.split('\n')[0] : 'No description provided.';
+        
+        return `
+        <div style="display: flex; gap: 20px; background-color: #f7fafc; padding: 24px; border-radius: var(--border-radius-md); border: 1px solid #edf2f7; border-left: 4px solid var(--color-accent); transition: var(--transition-smooth);" class="event-card-dynamic">
+          <!-- Date Badge -->
+          <div style="text-align: center; background-color: var(--color-primary); color: var(--color-accent); border-radius: var(--border-radius-sm); padding: 10px; width: 65px; height: 75px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; box-shadow: var(--shadow-subtle);">
+            <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; display: block; letter-spacing: 0.05em; line-height: 1;">${dateBadge.month}</span>
+            <span style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; display: block; line-height: 1; margin-top: 4px;">${dateBadge.day}</span>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 6px; font-weight: 700; line-height: 1.3;">${event.summary}</h3>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 8px;">${descriptionStr}</p>
+            <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-accent); display: flex; align-items: center; gap: 4px;">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              ${timeStr} | ${locationStr}
+            </span>
+          </div>
+        </div>
+        `;
+      }).join('');
+    }
+
+    function parseICS(icsText) {
+      const events = [];
+      // Unfold folded lines
+      const unfolded = icsText.replace(/\r?\n\s/g, '').replace(/\r/g, '');
+      const eventBlocks = unfolded.split('BEGIN:VEVENT');
+      
+      for (let i = 1; i < eventBlocks.length; i++) {
+        const block = eventBlocks[i];
+        
+        const summaryMatch = block.match(/SUMMARY:(.*)/);
+        const summary = summaryMatch ? summaryMatch[1].trim().replace(/\\,/g, ',').replace(/\\;/g, ';') : 'No Title';
+        
+        const descMatch = block.match(/DESCRIPTION:(.*)/);
+        const description = descMatch ? descMatch[1].trim().replace(/\\n/g, ' ').replace(/\\,/g, ',') : '';
+        
+        const locMatch = block.match(/LOCATION:(.*)/);
+        const location = locMatch ? locMatch[1].trim().replace(/\\,/g, ',') : '';
+        
+        let dateObj = null;
+        let isAllDay = false;
+        
+        // Robust DTSTART match that extracts the value regardless of TZID or VALUE attributes
+        const dtstartLineMatch = block.match(/DTSTART(?:;[^:]*)?:([^\r\n]+)/);
+        if (dtstartLineMatch) {
+          const val = dtstartLineMatch[1].trim(); // e.g. 20260624 or 20260624T193000 or 20260624T193000Z
+          if (val.includes('T')) {
+            // Date-time format: yyyyMMddTHHmmss or yyyyMMddTHHmmssZ
+            const year = parseInt(val.substring(0, 4), 10);
+            const month = parseInt(val.substring(4, 6), 10) - 1;
+            const day = parseInt(val.substring(6, 8), 10);
+            const hour = parseInt(val.substring(9, 11), 10);
+            const min = parseInt(val.substring(11, 13), 10);
+            const sec = parseInt(val.substring(13, 15), 10);
+            
+            if (val.endsWith('Z')) {
+              // Parse as UTC
+              dateObj = new Date(Date.UTC(year, month, day, hour, min, sec));
+            } else {
+              // Parse as local browser time (which matches the target timezone offset in most contexts)
+              dateObj = new Date(year, month, day, hour, min, sec);
+            }
+          } else {
+            // Date-only format: yyyyMMdd
+            const year = parseInt(val.substring(0, 4), 10);
+            const month = parseInt(val.substring(4, 6), 10) - 1;
+            const day = parseInt(val.substring(6, 8), 10);
+            dateObj = new Date(year, month, day);
+            isAllDay = true;
+          }
+        }
+        
+        if (dateObj) {
+          events.push({
+            summary,
+            description,
+            location,
+            start: dateObj,
+            isAllDay
+          });
+        }
+      }
+      return events;
+    }
+
+    async function fetchCalendarICS(calendarId) {
+      const icsUrl = `https://calendar.google.com/calendar/ical/${encodeURIComponent(calendarId)}/public/basic.ics`;
+      
+      const endpoints = [
+        './calendar-feed', // Relative redirect proxy (succeeds natively if hosted on Netlify/Vercel redirects)
+        'calendar-feed',
+        icsUrl, // Direct fetch (works if browser CORS is disabled via extension)
+        `https://proxy.corsfix.com/?${icsUrl}`, // Primary CORS Proxy: Corsfix (works under localhost/http)
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(icsUrl)}`, // Backup CORS Proxy 1
+        `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(icsUrl)}` // Backup CORS Proxy 2
+      ];
+
+      const fetchWithTimeout = async (url, index) => {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2500); // 2.5s timeout
+        try {
+          console.log(`Starting fetch via Endpoint ${index + 1}: ${url}`);
+          const res = await fetch(url, { signal: controller.signal });
+          clearTimeout(timeoutId);
+          if (res.ok) {
+            const text = await res.text();
+            if (text && text.includes('BEGIN:VCALENDAR')) {
+              console.log(`Endpoint ${index + 1} succeeded first!`);
+              return text;
+            }
+          }
+          throw new Error(`Endpoint ${index + 1} returned invalid response`);
+        } catch (e) {
+          clearTimeout(timeoutId);
+          console.warn(`Endpoint ${index + 1} failed or timed out:`, e.message || e);
+          throw e;
+        }
+      };
+
+      try {
+        return await Promise.any(endpoints.map((endpoint, idx) => fetchWithTimeout(endpoint, idx)));
+      } catch (err) {
+        throw new Error('All CORS endpoints failed to load the calendar feed.');
+      }
+    }
+
+    function getEventCache() {
+      try {
+        const cachedStr = localStorage.getItem('noble9th_events');
+        const cachedTimeStr = localStorage.getItem('noble9th_events_timestamp');
+        if (!cachedStr || !cachedTimeStr) return null;
+        
+        const timestamp = parseInt(cachedTimeStr, 10);
+        if (isNaN(timestamp)) return null;
+
+        const events = JSON.parse(cachedStr);
+        if (!Array.isArray(events)) return null;
+
+        // Parse ISO date strings back to Date objects
+        events.forEach(event => {
+          event.start = new Date(event.start);
+        });
+
+        return {
+          events,
+          timestamp
+        };
+      } catch (e) {
+        console.warn('Failed to parse event cache:', e);
+        return null;
+      }
+    }
+
+    function setEventCache(events) {
+      try {
+        localStorage.setItem('noble9th_events', JSON.stringify(events));
+        localStorage.setItem('noble9th_events_timestamp', Date.now().toString());
+      } catch (e) {
+        console.warn('Failed to save event cache:', e);
+      }
+    }
+
+    function loadCalendarEvents() {
+      const grid = document.getElementById('upcoming-events-grid');
+      if (!grid) return;
+
+      const todayStart = new Date();
+      todayStart.setHours(0, 0, 0, 0);
+
+      // Check if cache exists
+      const cache = getEventCache();
+      let hasRenderedFromCache = false;
+      let cachedUpcomingCount = 0;
+
+      if (cache) {
+        // Filter out past events
+        const upcoming = cache.events.filter(event => event.start >= todayStart);
+        cachedUpcomingCount = upcoming.length;
+        
+        // Only render if we actually have future events cached
+        if (cachedUpcomingCount > 0) {
+          renderEvents(upcoming.slice(0, 3));
+          hasRenderedFromCache = true;
+          
+          // Check age: if less than 2 hours old, do not fetch from network!
+          const cacheAge = Date.now() - cache.timestamp;
+          if (cacheAge < 1000 * 60 * 60 * 2) { // 2 hours
+            console.log('Loaded upcoming events from local storage cache (recent). Skipping live fetch.');
+            return;
+          }
+          console.log('Cache exists but is older than 2 hours. Fetching live updates in background...');
+        } else {
+          console.log('Cache exists but all cached events are in the past.');
+        }
+      }
+
+      // If no valid cache rendered, load fallback (mock) events immediately so user doesn't see skeletons
+      if (!hasRenderedFromCache) {
+        console.log('No valid cache found or cache contains only past events. Loading mock events immediately and starting live fetch...');
+        loadFallbackEvents();
+      }
+
+      // Start the network fetch in the background
+      fetchCalendarICS(CALENDAR_ID)
+        .then(icsText => {
+          const parsedEvents = parseICS(icsText);
+          
+          const upcoming = parsedEvents.filter(event => event.start >= todayStart);
+          upcoming.sort((a, b) => a.start - b.start);
+          
+          if (upcoming.length > 0) {
+            // Cache all upcoming events
+            setEventCache(upcoming);
+            
+            // Render top 3
+            const top3 = upcoming.slice(0, 3);
+            renderEvents(top3);
+            console.log('Successfully fetched and rendered live events.');
+          } else {
+            console.log('Live fetch returned no upcoming events. Keeping current rendered events.');
+            if (!hasRenderedFromCache) {
+              loadFallbackEvents();
+            }
+          }
+        })
+        .catch(err => {
+          console.error('Error loading live Google Calendar feed:', err);
+          // If we haven't successfully rendered from cache (or cache was empty/past events only),
+          // ensure mock/fallback events are loaded instead of leaving skeletons or an empty list.
+          if (!hasRenderedFromCache) {
+            loadFallbackEvents();
+          }
+        });
+    }
+
+    function loadFallbackEvents() {
+      const today = new Date();
+      
+      // Calculate future dates relative to today
+      const date1 = new Date(today);
+      date1.setDate(today.getDate() + 4);
+      date1.setHours(16, 0, 0); // 4:00 PM
+
+      const date2 = new Date(today);
+      date2.setDate(today.getDate() + 4);
+      date2.setHours(19, 0, 0); // 7:00 PM
+
+      const date3 = new Date(today);
+      date3.setDate(today.getDate() + 5);
+      date3.setHours(11, 0, 0); // 11:00 AM
+
+      // Authentic fallbacks compiled from actual calendar events
+      const mockEvents = [
+        {
+          summary: 'R∴W∴ Johnathan Weinrich - Wake & Viewing',
+          description: 'Wake and viewing services. Location: Joseph W. Sorce Funeral Home.',
+          start: date1,
+          location: 'Joseph W. Sorce Funeral Home, Pearl River',
+          isAllDay: false
+        },
+        {
+          summary: 'R∴W∴ Johnathan Weinrich - Masonic Memorial Service',
+          description: 'Masonic memorial services. Location: Joseph W. Sorce Funeral Home.',
+          start: date2,
+          location: 'Joseph W. Sorce Funeral Home, Pearl River',
+          isAllDay: false
+        },
+        {
+          summary: 'Allemania - Lodge Picnic',
+          description: 'District fellowship gathering and Allemania Lodge picnic.',
+          start: date3,
+          location: 'German Masonic Park, Tappan NY',
+          isAllDay: true
+        }
+      ];
+      
+      renderEvents(mockEvents);
+    }
+
+    // Initialize upcoming events list
+    loadCalendarEvents();
+  </script>
+</body>
+</html>

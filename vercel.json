@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/calendar-feed",
+      "destination": "https://calendar.google.com/calendar/ical/dd@gmcf.us/public/basic.ics"
+    }
+  ]
+}
