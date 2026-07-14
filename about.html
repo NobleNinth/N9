@@ -27,16 +27,16 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link active">About Freemasonry</a>
         <a href="calendar.html" class="nav-link">Calendar</a>
-        <a href="news.html" class="nav-link">Masonic News</a>
+        <!-- <a href="news.html" class="nav-link">Masonic News</a> -->
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Editorial Section -->
-  <section class="section" style="background-color: #f7fafc;">
+  <section class="section reveal" style="background-color: #f7fafc;">
     <div class="container">
-      <article class="editorial-container">
+      <article class="editorial-container animate-entrance delay-1">
         
         <header class="editorial-header">
           <span style="font-family: var(--font-sans); color: var(--color-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; display: block; margin-bottom: 8px;">History & Philosophy</span>
@@ -116,7 +116,7 @@
           <ul class="footer-links-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Freemasonry</a></li>
-            <li><a href="news.html">Masonic News</a></li>
+            <!-- <li><a href="news.html">Masonic News</a></li> -->
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
@@ -125,7 +125,7 @@
           <h4>Members & Portal</h4>
           <ul class="footer-links-list">
             <li><a href="roster.html">Roster & Forms</a></li>
-            <li><a href="wp-admin/">Admin Login</a></li>
+            <!-- <li><a href="wp-admin/">Admin Login</a></li> -->
             <li><a href="http://NYMasons.Org" target="_blank">GL of New York</a></li>
           </ul>
         </div>
@@ -138,14 +138,7 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile navigation toggle
-    const toggleBtn = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
-    
-    toggleBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-    });
-  </script>
+  <!-- Global UI JavaScript -->
+  <script src="main.js"></script>
 </body>
 </html>

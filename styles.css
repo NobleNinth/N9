@@ -370,8 +370,8 @@ button, input, textarea {
 
 .lodge-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-medium);
-  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: var(--shadow-medium), 0 0 20px rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.4);
 }
 
 .lodge-card:hover::before {
@@ -472,8 +472,9 @@ button, input, textarea {
 }
 
 .leader-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   border-color: var(--color-accent);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 175, 55, 0.25);
 }
 
 .leader-avatar {
@@ -598,8 +599,9 @@ button, input, textarea {
 }
 
 .news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-medium);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-medium), 0 0 20px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.25);
 }
 
 .news-card-img {
@@ -983,4 +985,102 @@ button, input, textarea {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+}
+
+/* ==========================================================================
+   Animations & Transitions
+   ========================================================================== */
+
+/* 1. Hero Entrance Keyframes & Animation Helper Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-entrance {
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }
+.delay-5 { animation-delay: 0.7s; }
+
+/* 2. Slow breathing pulse animation for Masonic symbols */
+@keyframes masonicPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.85;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+  }
+}
+
+.pulse-symbol {
+  display: inline-block;
+  animation: masonicPulse 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* 3. Sticky navbar scrolled styles */
+.navbar.scrolled {
+  padding: 8px 0;
+  background-color: rgba(6, 14, 32, 0.98);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 4. Scroll Reveal Classes (Intersection Observer) */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal for grid elements */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-stagger.active > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay helper classes for child elements */
+.reveal-stagger.active > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.active > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger.active > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger.active > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger.active > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal-stagger.active > *:nth-child(6) { transition-delay: 0.55s; }
+
+/* 5. Smooth Page Scroll behavior */
+html {
+  scroll-behavior: smooth;
 }

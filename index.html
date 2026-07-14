@@ -27,7 +27,7 @@
         <a href="index.html" class="nav-link active">Home</a>
         <a href="about.html" class="nav-link">About Freemasonry</a>
         <a href="calendar.html" class="nav-link">Calendar</a>
-        <a href="news.html" class="nav-link">Masonic News</a>
+        <!-- <a href="news.html" class="nav-link">Masonic News</a> -->
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
     </div>
@@ -36,17 +36,19 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <img src="district_logo.png" alt="9th Manhattan Masonic District Logo" style="height: 220px; width: auto; margin: 0 auto 24px auto; display: block; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));">
-      <p class="hero-subtitle">Grand Lodge of F&AM State of New York</p>
-      <h1 class="hero-title">9th Manhattan<br>Masonic District</h1>
-      <p class="hero-desc"> Fostering brotherhood, charity, and wisdom. Anchored in our historic German Masonic heritage in New York, we unite lodges across Whitestone, Manhattan, and Sparkill. </p>
-      <a href="#lodges" class="btn btn-primary">Our Lodges</a>
-      <a href="about.html" class="btn btn-secondary">Learn More</a>
+      <img src="district_logo.png" alt="9th Manhattan Masonic District Logo" class="animate-entrance delay-1" style="height: 220px; width: auto; margin: 0 auto 24px auto; display: block; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));">
+      <p class="hero-subtitle animate-entrance delay-2">Grand Lodge of F&AM State of New York</p>
+      <h1 class="hero-title animate-entrance delay-3">9th Manhattan<br>Masonic District</h1>
+      <p class="hero-desc animate-entrance delay-4"> Fostering brotherhood, charity, and wisdom. Anchored in our historic German Masonic heritage in New York, we unite lodges across Whitestone, Manhattan, and Sparkill. </p>
+      <div class="animate-entrance delay-5">
+        <a href="#lodges" class="btn btn-primary">Our Lodges</a>
+        <a href="about.html" class="btn btn-secondary">Learn More</a>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="section">
+  <section class="section reveal">
     <div class="container">
       <div class="heritage-grid">
         <div>
@@ -74,8 +76,8 @@
         </div>
         
         <!-- Symbolic Art Frame -->
-        <div style="background-color: var(--color-primary-dark); padding: 40px; border-radius: var(--border-radius-lg); border: 2px solid var(--color-accent); box-shadow: var(--shadow-medium); text-align: center; color: var(--color-text-light);">
-          <div style="font-family: var(--font-serif); font-size: 4rem; color: var(--color-accent); margin-bottom: 10px; opacity: 0.8;">∴</div>
+        <div style="background-color: var(--color-primary-dark); padding: 40px; border-radius: var(--border-radius-lg); border: 2px solid var(--color-accent); box-shadow: var(--shadow-medium); text-align: center; color: var(--color-text-light);" class="reveal">
+          <div style="font-family: var(--font-serif); font-size: 4rem; color: var(--color-accent); margin-bottom: 10px; opacity: 0.8;" class="pulse-symbol">∴</div>
           <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 12px; color: var(--color-text-light);">Virtus Junxit<br>Mors Non Separabit</h3>
           <p style="font-size: 0.9rem; color: #a0aec0; font-style: italic;">"What virtue has joined, death shall not separate."</p>
           <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 24px 0;">
@@ -101,7 +103,7 @@
         <button class="btn btn-secondary filter-btn" data-filter="sparkill">Sparkill</button>
       </div>
       
-      <div class="grid-lodges" id="lodges-grid">
+      <div class="grid-lodges reveal-stagger" id="lodges-grid">
                <!-- Lodge 1: Trinity -->
         <div class="lodge-card" data-location="whitestone">
           <div class="lodge-header">
@@ -129,6 +131,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -159,6 +162,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -189,6 +193,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -219,6 +224,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <a href="https://www.ksb232.org/" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a>
           </div>
         </div>
 
@@ -249,6 +255,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -279,6 +286,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -309,6 +317,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -339,6 +348,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -369,6 +379,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -399,6 +410,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -429,6 +441,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -459,6 +472,7 @@
               Get Directions
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <!-- <a href="LODGE_WEBSITE_URL" target="_blank" class="lodge-website-btn" style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Visit Website</a> -->
           </div>
         </div>
 
@@ -467,7 +481,7 @@
   </section>
 
   <!-- Upcoming Events Section -->
-  <section class="section" style="background-color: white; border-bottom: 1px solid #edf2f7;">
+  <section class="section reveal" style="background-color: white; border-bottom: 1px solid #edf2f7;">
     <div class="container">
       <h2 class="section-title text-center">Upcoming Events</h2>
       <p class="section-subtitle text-center">Stay informed on upcoming lodge degrees, DDGM official visitations, and district conventions.</p>
@@ -513,12 +527,12 @@
   </section>
 
   <!-- Leadership Section -->
-  <section class="section section-dark">
+  <section class="section section-dark reveal">
     <div class="container">
       <h2 class="section-title text-center">District Leadership</h2>
       <p class="section-subtitle text-center">Guiding the 9th Manhattan Masonic District with dedication, wisdom, and brotherly love.</p>
       
-      <div class="leadership-grid">
+      <div class="leadership-grid reveal-stagger">
         
         <!-- Leader 1: DDGM -->
         <div class="leader-card">
@@ -576,7 +590,7 @@
           <ul class="footer-links-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Freemasonry</a></li>
-            <li><a href="news.html">Masonic News</a></li>
+            <!-- <li><a href="news.html">Masonic News</a></li> -->
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
@@ -585,7 +599,7 @@
           <h4>Members & Portal</h4>
           <ul class="footer-links-list">
             <li><a href="roster.html">Roster & Forms</a></li>
-            <li><a href="wp-admin/">Admin Login</a></li>
+            <!-- <li><a href="wp-admin/">Admin Login</a></li> -->
             <li><a href="http://NYMasons.Org" target="_blank">GL of New York</a></li>
           </ul>
         </div>
@@ -598,18 +612,11 @@
     </div>
   </footer>
 
-  <!-- Basic Interactivity JavaScript -->
-  <script>
-    // Mobile navigation toggle
-    const toggleBtn = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
-    
-    if (toggleBtn && navMenu) {
-      toggleBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-      });
-    }
+  <!-- Global UI JavaScript -->
+  <script src="main.js"></script>
 
+  <!-- Page Interactivity JavaScript -->
+  <script>
     // Lodges Filtering
     const filterTabs = document.getElementById('filter-tabs');
     const lodgeCards = document.querySelectorAll('.lodge-card');
