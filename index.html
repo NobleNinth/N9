@@ -850,40 +850,7 @@
       const todayStart = new Date();
       todayStart.setHours(0, 0, 0, 0);
 
-      // Check if cache exists
-      const cache = getEventCache();
-      let hasRenderedFromCache = false;
-      let cachedUpcomingCount = 0;
-
-      if (cache) {
-        // Filter out past events
-        const upcoming = cache.events.filter(event => event.start >= todayStart);
-        cachedUpcomingCount = upcoming.length;
-        
-        // Only render if we actually have future events cached
-        if (cachedUpcomingCount > 0) {
-          renderEvents(upcoming.slice(0, 3));
-          hasRenderedFromCache = true;
-          
-          // Check age: if less than 2 hours old, do not fetch from network!
-          const cacheAge = Date.now() - cache.timestamp;
-          if (cacheAge < 1000 * 60 * 60 * 2) { // 2 hours
-            console.log('Loaded upcoming events from local storage cache (recent). Skipping live fetch.');
-            return;
-          }
-          console.log('Cache exists but is older than 2 hours. Fetching live updates in background...');
-        } else {
-          console.log('Cache exists but all cached events are in the past.');
-        }
-      }
-
-      // If no valid cache rendered, load fallback (mock) events immediately so user doesn't see skeletons
-      if (!hasRenderedFromCache) {
-        console.log('No valid cache found or cache contains only past events. Loading mock events immediately and starting live fetch...');
-        loadFallbackEvents();
-      }
-
-      // Start the network fetch in the background
+      // Start the network fetch immediately
       fetchCalendarICS(CALENDAR_ID)
         .then(icsText => {
           const parsedEvents = parseICS(icsText);
@@ -892,27 +859,19 @@
           upcoming.sort((a, b) => a.start - b.start);
           
           if (upcoming.length > 0) {
-            // Cache all upcoming events
-            setEventCache(upcoming);
-            
-            // Render top 3
+            // Render the top 3 live events
             const top3 = upcoming.slice(0, 3);
             renderEvents(top3);
             console.log('Successfully fetched and rendered live events.');
           } else {
-            console.log('Live fetch returned no upcoming events. Keeping current rendered events.');
-            if (!hasRenderedFromCache) {
-              loadFallbackEvents();
-            }
+            console.log('Live fetch returned no upcoming events. Loading fallback events.');
+            loadFallbackEvents();
           }
         })
         .catch(err => {
           console.error('Error loading live Google Calendar feed:', err);
-          // If we haven't successfully rendered from cache (or cache was empty/past events only),
-          // ensure mock/fallback events are loaded instead of leaving skeletons or an empty list.
-          if (!hasRenderedFromCache) {
-            loadFallbackEvents();
-          }
+          // In case of error (e.g. offline, CORS issue), load fallback/mock events
+          loadFallbackEvents();
         });
     }
 
